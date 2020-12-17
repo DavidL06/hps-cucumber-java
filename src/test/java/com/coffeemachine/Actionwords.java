@@ -16,6 +16,9 @@ public class Actionwords {
     public boolean handleBeans = false;
     public boolean handleGrounds = false;
 
+    public void theCoffeeMachineIsPluggedIn() {
+        assertEquals("true", "true");
+    }
 
     public void iStartTheCoffeeMachineUsingLanguageLang() {
         iStartTheCoffeeMachineUsingLanguageLang("en");

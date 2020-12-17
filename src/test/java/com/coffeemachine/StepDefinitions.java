@@ -6,9 +6,19 @@ import cucumber.api.java.en.*;
 public class StepDefinitions {
     public Actionwords actionwords = new Actionwords();
 
-    @When("^I start the coffee machine using language \"(.*)\"$")
-    public void iStartTheCoffeeMachineUsingLanguageLang(String lang) {
-        actionwords.iStartTheCoffeeMachineUsingLanguageLang(lang);
+    @Given("^the coffee machine is plugged-in$")
+    public void the_coffee_machine_is_plugged_in() throws Throwable {
+        actionwords.theCoffeeMachineIsPluggedIn();
+    }
+
+    @When("^I start the coffee machine using language en$")
+    public void iStartTheCoffeeMachineUsingLanguageLangEn() {
+        actionwords.iStartTheCoffeeMachineUsingLanguageLang("en");
+    }
+
+    @When("^I start the coffee machine using language fr$")
+    public void iStartTheCoffeeMachineUsingLanguageLangFr() {
+        actionwords.iStartTheCoffeeMachineUsingLanguageLang("fr");
     }
 
     @When("^I shutdown the coffee machine$")
@@ -19,6 +29,16 @@ public class StepDefinitions {
     @Then("^message \"(.*)\" should be displayed$")
     public void messageMessageShouldBeDisplayed(String message) {
         actionwords.messageMessageShouldBeDisplayed(message);
+    }
+
+    @Then("^message Ready should be displayed$")
+    public void messageMessageShouldBeDisplayedReady() {
+        actionwords.messageMessageShouldBeDisplayed("Ready");
+    }
+
+    @Then("^message Pret should be displayed$")
+    public void messageMessageShouldBeDisplayedPret() {
+        actionwords.messageMessageShouldBeDisplayed("Prêt");
     }
 
     @Then("^coffee should be served$")
