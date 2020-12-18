@@ -29,7 +29,7 @@ public class Actionwords {
     }
 
     public void iShutdownTheCoffeeMachine() {
-         assertTrue(false);
+        sut.stop();
     }
 
     public void messageMessageShouldBeDisplayed(String message) {
