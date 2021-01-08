@@ -5,3 +5,6 @@ Feature: New feature
     Given the coffee machine is started
     When I shutdown the coffee machine
     Then message "" should be displayed
+
+  @ORPHAN
+  Scenario: Second Scenario
