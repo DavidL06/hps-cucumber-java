@@ -1,4 +1,5 @@
 Feature: New feature
+	Rule: My first rule
 
 		Scenario: New scenario
 			Given the coffee machine is started
