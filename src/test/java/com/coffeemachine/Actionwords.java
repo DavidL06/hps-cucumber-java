@@ -33,7 +33,7 @@ public class Actionwords {
     }
 
     public void messageMessageShouldBeDisplayed(String message) {
-        assertEquals(sut.message(), message);
+        assertEquals(sut.message(), "a"+message);
     }
 
     public void coffeeShouldBeServed() {
