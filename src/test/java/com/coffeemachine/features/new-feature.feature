@@ -1,7 +1,0 @@
-Feature: New feature
-	Rule: My first rule
-
-		Scenario: New scenario
-			Given the coffee machine is started
-			When  I shutdown the coffee machine
-			Then  message "" should be displayed
