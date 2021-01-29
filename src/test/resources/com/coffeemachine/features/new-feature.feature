@@ -14,3 +14,11 @@ Background:
 			Given the coffee machine is started
 			When  I shutdown the coffee machine
 			Then coffee should not be served
+
+
+	Rule: A second rule
+
+		Scenario: Third scenario
+			Given the coffee machine is started
+			When  I shutdown the coffee machine
+			Then coffee should not be served
