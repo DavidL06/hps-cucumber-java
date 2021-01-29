@@ -1,7 +1,7 @@
 package com.coffeemachine;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.*;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.*;
 
 public class StepDefinitions {
     public Actionwords actionwords = new Actionwords();
@@ -29,16 +29,6 @@ public class StepDefinitions {
     @Then("^message \"(.*)\" should be displayed$")
     public void messageMessageShouldBeDisplayed(String message) {
         actionwords.messageMessageShouldBeDisplayed(message);
-    }
-
-    @Then("^message Ready should be displayed$")
-    public void messageMessageShouldBeDisplayedReady() {
-        actionwords.messageMessageShouldBeDisplayed("Ready");
-    }
-
-    @Then("^message Pret should be displayed$")
-    public void messageMessageShouldBeDisplayedPret() {
-        actionwords.messageMessageShouldBeDisplayed("Prêt");
     }
 
     @Then("^coffee should be served$")
