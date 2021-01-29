@@ -5,6 +5,6 @@ import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"message:target/cucumber.ndjson", "json:target/cucumber.json"})
+@CucumberOptions(plugin = {"pretty", "message:target/cucumber.ndjson"})
 public class CoffeeMachineTest {
 }

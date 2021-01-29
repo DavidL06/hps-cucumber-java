@@ -1,4 +1,4 @@
-Feature: New feature
+Feature: Second feature with no rule
 
 Background:
 	Given the coffee machine is plugged-in
@@ -7,8 +7,6 @@ Background:
 			Given the coffee machine is started
 			When  I shutdown the coffee machine
 			Then  message "" should be displayed
-
-	Rule: A rule
 
 		Scenario: Stupid scenario
 			Given the coffee machine is started
