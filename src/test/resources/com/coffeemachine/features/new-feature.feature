@@ -10,6 +10,9 @@ Background:
 
 	Rule: A rule
 
+		Background:
+			Given the coffee machine is plugged-in
+
 		Scenario: Stupid scenario
 			Given the coffee machine is started
 			When  I shutdown the coffee machine

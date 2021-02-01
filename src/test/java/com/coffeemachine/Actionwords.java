@@ -17,7 +17,7 @@ public class Actionwords {
     public boolean handleGrounds = false;
 
     public void theCoffeeMachineIsPluggedIn() {
-        assertEquals("true", "true");
+        assertEquals("true", "false");
     }
 
     public void iStartTheCoffeeMachineUsingLanguageLang() {
