@@ -1,6 +1,6 @@
 # hps-cucumber-java
 
-test2
+test
 
 [![Build Status](https://travis-ci.org/hiptest/hps-cucumber-java.svg?branch=master)](https://travis-ci.org/hiptest/hps-cucumber-java)
 
