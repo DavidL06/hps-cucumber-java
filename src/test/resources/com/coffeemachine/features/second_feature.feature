@@ -1,4 +1,7 @@
 Feature: Second feature with no rule
+Blablav
+
+Rule: It is nice to have a rule
 
 Background:
 	Given the coffee machine is plugged-in
