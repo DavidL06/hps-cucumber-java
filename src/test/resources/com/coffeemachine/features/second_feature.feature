@@ -1,4 +1,4 @@
-Feature: Second feature with no rule
+Feature: Second feature with rule on top
 Blabla
 
 Rule: It is nice to have a rule
