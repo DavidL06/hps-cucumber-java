@@ -13,4 +13,14 @@ Background:
 		When  I shutdown the coffee machine
 		Then coffee should not be served
 
+	Scenario Outline: Messages are based on language
+    # Well, sometimes, you just get a coffee.
+    When I start the coffee machine using language "<language>"
+    Then message "<ready_message>" should be displayed
+
+    Examples:
+      | language | ready_message | hiptest-uid |
+      | en | Ready |  |
+      | fr | Pret |  |
+
 
