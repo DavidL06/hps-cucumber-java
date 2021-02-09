@@ -11,12 +11,12 @@ public class StepDefinitions {
         actionwords.theCoffeeMachineIsPluggedIn();
     }
 
-    @When("^I start the coffee machine using language en$")
+    @When("^I start the coffee machine using language \"en\"$")
     public void iStartTheCoffeeMachineUsingLanguageLangEn() {
         actionwords.iStartTheCoffeeMachineUsingLanguageLang("en");
     }
 
-    @When("^I start the coffee machine using language fr$")
+    @When("^I start the coffee machine using language \"fr\"$")
     public void iStartTheCoffeeMachineUsingLanguageLangFr() {
         actionwords.iStartTheCoffeeMachineUsingLanguageLang("fr");
     }
