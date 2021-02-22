@@ -4,6 +4,17 @@
     As a polyglot coffee lover
     I can select the language on the coffee machine
     So I can practice my use of greetings in several languages
+
+  Background:
+    Given the coffee machine is plugged-in
+
+  Scenario: 
+    Default settings
+    Given the coffee machine is started
+    When I switch to settings mode
+    Then settings should be:
+      | water hardness | 2      |
+      | grinder        | medium |
   
   Rule: International
 
@@ -19,13 +30,6 @@
     # Well, sometimes, you just get a coffee.
     When I start the coffee machine using language "<language>"
     Then message "<ready_message>" should be displayed
-    And It displays "<attempts>" attempts remaining
-
-    Examples: Attempts
-      | attempts |
-      | one      |
-      | two      |
-      | three    |
 
     Examples:
       | language | ready_message |
